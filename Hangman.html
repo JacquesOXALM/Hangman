@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Hangman.css">
+    <script src="Hangman.js"></script>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Lord High Poobah Jacques is calling</title>
+</head>
+<body>
+<input type="text" id="letter" value="" size="1" maxlength="1">
+<body onload="startGame(1)">
+<button id="myButton" onclick="Hangman()">Guess Letter</button>
+<div id="Guess"></div>
+<div id="letter"></div>
+<div id="underline"></div>
+</body>
+</html>
