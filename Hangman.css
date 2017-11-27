@@ -11,3 +11,8 @@
     margin-left: 45%;
     top: 35%;
 }
+
+#word{
+    position: absolute;
+    margin-inside: 5%;
+}
