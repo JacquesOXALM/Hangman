@@ -9,7 +9,7 @@
         }
     </style>
     <meta charset="UTF-8">
-    <title>Lord High Poobah Jacques is calling</title>
+    <title>tiTLe HeRE</title>
 </head>
 <body>
 
@@ -45,20 +45,24 @@
 
 
 
-<button id="myButton" onclick="startGame()">Guess Letter</button>
+<button id="myButton" onclick="startGame()">Play Again!</button>
 
-
-<select id="word">
-<option value="0">Category</option>
-<option value="1">Animals</option>
-<option value="2">Difficult Words</option>
-<option value="3"> Cheeses</option>
-<option value="4">Footballers</option>
+<select id="categories">
+    <option value="0">Animals</option>
+    <option value="1">Difficult Words</option>
+    <option value="2"> Cheeses</option>
+    <option value="3">Footballers</option>
 </select>
+
+<button id="word" onclick="chooseWord()">Select Category</button>
+<button id="aButton" onclick="guessLetter()">Guess Letter!</button>
+
+
 
 <div id="Guess"></div>
 <div id="underline"></div>
+<div id="guessesLeft" >Guesses Remaining: 15</div>
+<div id="Ltaker"></div>
+</body>
 
-</body>
-</body>
 </html>

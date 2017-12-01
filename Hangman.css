@@ -14,5 +14,35 @@
 
 #word{
     position: absolute;
-    margin-inside: 5%;
+    margin-inside: 27%;
+}
+
+#myButton{
+    position: absolute;
+    margin-left: 82%;
+}
+
+#aButton{
+    position: absolute;
+    top: 15%;
+}
+
+#letter{
+    position: absolute;
+    margin-left: 4.5%;
+    top: 15%;
+}
+
+#guessesLeft{
+    border: 2px black;
+    position: absolute;
+    margin-left: 40%;
+    top: 30%;
+}
+
+#Ltaker{
+    font-size: 450%;
+    position: absolute;
+    margin-left: 40%;
+    top: 60%;
 }
