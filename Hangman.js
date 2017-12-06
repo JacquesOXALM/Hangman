@@ -10,7 +10,11 @@ var guessesLeft= 15;
 var guessedLetter = [];
 var displayedLetters = "";
 
-
+function toStart(){
+    guessesLeft = 15;
+    document.getElementById("title").innerHTML = "HANGMAN";
+    document.getElementById("instructions").innerHTML = "Select A Category To Start!";
+}
 
 function printWord(){
     var displayGuess = "";
@@ -29,8 +33,6 @@ function printWord(){
 
 function startGame() {
     guessesLeft = 15;
-    document.getElementById("title").innerHTML = "HANGMAN";
-    //document.getElementById("instructions").innerHTML = "Click Play To Start!";
     document.getElementById("guessesLeft").innerHTML = "Guesses Remaining: " + 15;
     document.getElementById("playAgain").innerHTML = "";
     document.getElementById("image").innerHTML = "";

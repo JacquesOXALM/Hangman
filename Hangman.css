@@ -84,15 +84,15 @@
 }
 
 #title{
-    font-size: 250%;
+    font-size: 300%;
     position: absolute;
     top: 5%;
-    margin-left: 40%;
+    margin-left: 39%;
 }
 
 #instructions{
-    font-size: 75%;
+    font-size: 150%;
     position: absolute;
-    top: 12%;
-    margin-left: 43%;
+    top: 13%;
+    margin-left: 38.5%;
 }
