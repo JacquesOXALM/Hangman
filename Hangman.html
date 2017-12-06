@@ -43,26 +43,32 @@
 
 </select>
 
+<body onload="startGame(1)">
+</body>
 
 
-<button id="myButton" onclick="startGame()">Play Again!</button>
+<button id="myButton" onclick="startGame()">Play</button>
 
 <select id="categories">
     <option value="0">Animals</option>
     <option value="1">Difficult Words</option>
     <option value="2"> Cheeses</option>
-    <option value="3">Footballers</option>
+    <option value="3">Soccer Players</option>
 </select>
 
-<button id="word" onclick="chooseWord()">Select Category</button>
+<button id="word" onclick="startGame()">Select Category</button>
 <button id="aButton" onclick="guessLetter()">Guess Letter!</button>
 
 
-
+<div id="title"></div>
+<div id="instructions"></div>
 <div id="Guess"></div>
 <div id="underline"></div>
 <div id="guessesLeft" >Guesses Remaining: 15</div>
 <div id="Ltaker"></div>
+<div id="Phatdub"></div>
+<div id="playAgain"></div>
+<div id="image"></div>
 </body>
 
 </html>

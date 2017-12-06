@@ -12,19 +12,36 @@
     top: 35%;
 }
 
+#categories{
+    position: absolute;
+    top: 7%;
+    margin-left: 11%;
+}
+
 #word{
     position: absolute;
-    margin-inside: 27%;
+    top: 7%;
+    margin-left: 20%;
 }
 
 #myButton{
+    font-size: 200%;
+    padding: 10px 24px;
     position: absolute;
-    margin-left: 82%;
+    margin-left: 2%;
+    background-color: saddlebrown;
+    color: beige;
+}
+
+#myButton:hover{
+    background-color: beige;
+    color: saddlebrown;
 }
 
 #aButton{
     position: absolute;
     top: 15%;
+    margin-left: 8%;
 }
 
 #letter{
@@ -41,8 +58,41 @@
 }
 
 #Ltaker{
-    font-size: 450%;
+    font-size: 250%;
     position: absolute;
-    margin-left: 40%;
+    margin-left: 30%;
+    top: 50%;
+}
+
+#Phatdub{
+    font-size: 250%;
+    position: absolute;
+    margin-left: 30%;
+    top: 50%;
+}
+
+#playAgain{
+    font-size: 150%;
+    position: absolute;
+    margin-left: 50%;
+    top: 70%;
+}
+#image{
+    position: absolute;
+    margin-left: 25%;
     top: 60%;
+}
+
+#title{
+    font-size: 250%;
+    position: absolute;
+    top: 5%;
+    margin-left: 40%;
+}
+
+#instructions{
+    font-size: 75%;
+    position: absolute;
+    top: 12%;
+    margin-left: 43%;
 }
