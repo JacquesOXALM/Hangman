@@ -9,6 +9,7 @@ var word="";
 var guessesLeft= 15;
 var guessedLetter = [];
 var displayedLetters = "";
+var possibleGuesses = ["a","b","c","d","e","f","g","h","i","j","k","l","m","o","p","q","r","s","t","u","v","w","x","y","z"];
 
 function toStart(){
     guessesLeft = 15;
@@ -33,12 +34,16 @@ function printWord(){
 
 function startGame() {
     guessesLeft = 15;
+    document.getElementById("aButton").disabled = false;
     document.getElementById("guessesLeft").innerHTML = "Guesses Remaining: " + 15;
     document.getElementById("playAgain").innerHTML = "";
     document.getElementById("image").innerHTML = "";
     displayedLetters = "";
-    for (var i=0; i< guessedLetter.length; i++){
-        document.getElementById("letter").innerHTML += "<option value=" + guessedLetter[i]+ ">" + guessedLetter[i] +"</option>";
+    document.getElementById("letter").length = 0;
+    //document.getElementById("letter").innerHTML = possibleGuesses;
+    for (var i=0; i < possibleGuesses.length; i++){
+        document.getElementById("letter").innerText = possibleGuesses[i];
+        document.getElementById("letter").innerHTML += "<option value=" + possibleGuesses[i]+ ">" + possibleGuesses[i] +"</option>";
     }
     guessedLetter=[];
     word = "";
@@ -77,14 +82,14 @@ function guessLetter(){
         document.getElementById("Ltaker").innerHTML = "You lose! You're garbage!";
         document.getElementById("image").innerHTML = "<img src='img/NoExtraGarb_cc.png' width='300' height='200'/>";
         document.getElementById("playAgain").innerHTML = "Click 'Play' to play again!"
-
+        document.getElementById("aButton").disabled = true;
 
     }
     if(printWord().indexOf("_") == -1){
         document.getElementById("Phatdub").innerHTML = "You win! You're one smart cookie!";
         document.getElementById("image").innerHTML = "<img src='img/SmartCookie.png' width='300' height='200'/>";
-            document.getElementById("playAgain").innerHTML = "Click 'Play' to play again!"
-
+        document.getElementById("playAgain").innerHTML = "Click 'Play' to play again!"
+        document.getElementById("aButton").disabled = true;
 
     }
 
