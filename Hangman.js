@@ -9,9 +9,9 @@ var word="";
 var guessesLeft= 15;
 var guessedLetter = [];
 var displayedLetters = "";
-var possibleGuesses = ["a","b","c","d","e","f","g","h","i","j","k","l","m","o","p","q","r","s","t","u","v","w","x","y","z"];
+var possibleGuesses = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 
-function toStart(){
+function toStart() {
     guessesLeft = 15;
     document.getElementById("title").innerHTML = "HANGMAN";
     document.getElementById("instructions").innerHTML = "Select A Category To Start!";
@@ -40,10 +40,10 @@ function startGame() {
     document.getElementById("image").innerHTML = "";
     displayedLetters = "";
     document.getElementById("letter").length = 0;
-    //document.getElementById("letter").innerHTML = possibleGuesses;
-    for (var i=0; i < possibleGuesses.length; i++){
-        document.getElementById("letter").innerText = possibleGuesses[i];
-        document.getElementById("letter").innerHTML += "<option value=" + possibleGuesses[i]+ ">" + possibleGuesses[i] +"</option>";
+    for (var i=0; i< possibleGuesses.length; i++){
+        console.log(document.getElementById("letter").value);
+        //document.getElementById("letter").innerText = possibleGuesses[i];
+        document.getElementById("letter").innerHTML += "<option value=" + possibleGuesses[i] + ">" + possibleGuesses[i] +"</option>";
     }
     guessedLetter=[];
     word = "";
